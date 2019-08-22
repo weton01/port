@@ -1,0 +1,5 @@
+.header-home {
+  height: 100vh;
+  background: linear-gradient(rgba(57, 106, 252, 0.2), rgba(41, 72, 255, 0.3)),
+    url("../../images/img-6.jpg") center/cover no-repeat;
+}

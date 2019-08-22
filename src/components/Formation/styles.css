@@ -1,0 +1,95 @@
+.formation {
+  border-radius: 5px;
+  box-shadow: var(--lightShadow);
+  transition: var(--mainTransition);
+}
+
+.formation:hover {
+  box-shadow: var(--darkShadow);
+}
+
+.formation-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 330px);
+  grid-gap: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.img-container:hover .formation-info {
+  color: white;
+}
+
+.img-container:hover .formation-title {
+  color: white;
+}
+
+.img-container:hover .formation-link {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.formation-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: scale(0);
+  transition: all 0.3s linear;
+  border-radius: 0px;
+  opacity: 0.7;
+}
+
+.formation-title {
+  position: absolute;
+  padding: 0.5rem 0;
+  text-align: center;
+  font-weight: 700;
+  top: 12%;
+  width: 100%;
+  color: transparent;
+}
+
+.formation-info {
+  position: absolute;
+  padding: 0.5rem 0;
+  text-align: center;
+  font-weight: 700;
+  top: 50%;
+  width: 100%;
+  color: transparent;
+}
+
+.img-container {
+  position: relative;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.img-container img {
+  width: 100%;
+  display: block;
+  transition: var(--mainTransition);
+  border-radius: 5px;
+}
+
+.img-container:hover {
+  background: rgba(0, 0, 0, 0.952);
+}
+
+.img-container:hover img {
+  opacity: 0.3;
+}
+
+.formation-link:hover {
+  opacity: 0.3;
+}
+
+@media (max-width: 1199.98px) {
+  .formation-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 225px);
+    grid-gap: 10px;
+    align-content: center;
+    justify-content: center;
+  }
+}

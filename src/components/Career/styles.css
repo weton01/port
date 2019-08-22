@@ -1,0 +1,20 @@
+.left-img-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.career {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  justify-self: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+
+.career-info {
+  padding-left: 20px;
+  border: 1.5px solid lightgrey;
+}

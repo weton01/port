@@ -1,0 +1,44 @@
+.certificates-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 280px);
+  grid-gap: 10px;
+  justify-self: center;
+  justify-content: center;
+  margin: 18px;
+  grid-gap: 60px;
+  margin-top: 80px;
+}
+
+.certificate {
+  list-style: none;
+  position: relative;
+  display: grid;
+  width: 100%;
+  border: 2px solid lightgray;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.certificate img {
+  position: absolute;
+  top: -45px;
+  left: 8px;
+  min-width: 260px;
+  height: 135px;
+  border-radius: 3px;
+  transition: all 0.2s;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+.certificate hr {
+  margin: 0px !important;
+}
+
+.certificate p {
+  font-size: 15px !important;
+}
+
+.certificate:hover img {
+  transform: translateY(-45px);
+  transition: all 0.2s;
+}

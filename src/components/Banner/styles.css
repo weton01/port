@@ -1,0 +1,19 @@
+.banner {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--mainLight);
+  padding: 2rem 1rem;
+  text-align: center;
+  max-width: 85% !important;
+  max-height: 85% !important;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+
+.banner div {
+  width: 10rem;
+  height: 5px;
+  background: var(--primaryColor);
+  margin: 1.7rem auto;
+  border-radius: 2px;
+}
